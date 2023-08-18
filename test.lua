@@ -6,7 +6,7 @@ local old
 old = hookfunction(market.PlayerOwnsAsset, function (self,...)
 	local args = {...}
 	local id = args[2]
-	print("test: "..tostring(id))
+	print("id: "..tostring(id))
 	return true
 end)
 
