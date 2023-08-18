@@ -4,7 +4,7 @@ local market = game:GetService("MarketplaceService")
 
 local old
 old = hookfunction(market.PlayerOwnsAsset, function (self,id,...)
-	print(id)
+	print("test: "..tostring(id))
 	return old(self,id,...)
 end)
 
